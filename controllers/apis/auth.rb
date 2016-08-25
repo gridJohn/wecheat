@@ -46,7 +46,7 @@ class WecheatApp
       json access_token: 'access_token',
            expires_in: 7200,
            refresh_token: 'refresh_token',
-           open_id: $AUTH_CODES[params[:code]][:user].openid,
+           openid: $AUTH_CODES[params[:code]][:user].openid,
            scope: $AUTH_CODES[params[:code]][:scope],
            unionid: 'unionid'
     end
